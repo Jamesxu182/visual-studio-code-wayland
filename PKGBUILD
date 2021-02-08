@@ -11,8 +11,8 @@ pkgdesc='The Open Source build of Visual Studio Code (vscode) editor with electr
 # Important: Remember to check https://github.com/microsoft/vscode/blob/master/.yarnrc (choose correct tag) for target electron version
 _electron=electron-beta
 _pkgname=vscode
-pkgver=1.52.1
-pkgrel=2
+pkgver=1.53.0
+pkgrel=1
 arch=('x86_64')
 url='https://github.com/microsoft/vscode'
 license=('MIT')
@@ -20,14 +20,14 @@ depends=('electron-beta-bin' 'libsecret' 'libx11' 'libxkbfile' 'ripgrep')
 optdepends=('bash-completion: Bash completions'
             'zsh-completions: ZSH completitons'
             'x11-ssh-askpass: SSH authentication')
-makedepends=('git' 'gulp' 'npm' 'python2' 'yarn' 'nodejs-lts-dubnium')
+makedepends=('git' 'gulp' 'npm' 'python2' 'yarn' 'nodejs-lts-erbium')
 provides=('code')
 conflicts=('code')
 source=("https://codeload.github.com/microsoft/${_pkgname}/tar.gz/$pkgver"
         'code.js'
         'code.sh'
         'product_json.diff')
-sha512sums=('6be310bd3dbd1a4a0a054fc07e090325b80e25b280143ac5a15bb0d563207c79939c0fe8244f9ef826882281e73ba5bbdb3a204607ab986707d9169b1c168692'
+sha512sums=('bac911c86bed429ad8e0da260764d780b608d39318d41296aef62a3eb789fa3d981a09b7a9033fd9d7c82bddf4d0ca0e888facd05530e57ea306e6be2c4331d3'
             '814c9554427183cd893a33cd2cbe91f6e0ea71921ef0717c86217b1d3058d265f9ff7a9ace3e7b76f122e60b7686475cf4d999e581a1845face3033afb9f745f'
             '2a29dd06ec4b3e340a1f20aaf3379ed7b97ac39092811ee5ed4a67ba5d4eea26eb718ccb6ec7d49059341359d96272757493c43e3ecf39d3ad9053701b44bfe9'
             'b1aa0d7c5b3e3e8ba1172822d75ea38e90efc431b270e0b4ca9e45bf9c0be0f60922c8618969ef071b5b6dbd9ac9f030294f1bf49bcc28c187b46d113dca63a7')
